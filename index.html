@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Notícias de Desenvolvimento Web</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="Logotipo.png" alt="Logo do site" style="width: 70px;">
+            <h1>Notícias de Desenvolvimento Web</h1>
+        </div>
+    
+        <!-- Menu de navegação com checkbox para controle -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        
+        <!-- Botão de abrir -->
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        
+        <!-- Menu de navegação -->
+        <nav id="navMenu">
+            <a href="index.html">Página Inicial</a> 
+            <a href="listagem.html">Listagem de Notícias</a> 
+            <a href="cadastro.html">Cadastrar Notícia</a> 
+            <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+        </nav>
+    
+        <!-- Botão de fechar -->
+        <label for="menu-toggle" class="close-icon">×</label>
+    </header>
+    <main>
+        <section>
+            <h2>Front-end</h2>
+            <article>
+                <h3>Novidade no HTML</h3>
+                <p>O HTML6 está chegando com novas funcionalidades que vão facilitar o desenvolvimento de interfaces.</p>
+            </article>
+            <article>
+                <h3>Tendências em CSS</h3>
+                <img src="https://res.cloudinary.com/cloudinary-marketing/images/c_fill,w_1181/f_auto,q_auto/v1649718594/Web_Assets/blog/working_with_css_22218720ab/working_with_css_22218720ab-jpg?_i=AA" alt="Imagem sobre tendências em CSS" width="200">
+                <p>Saiba mais sobre as tendências que estão moldando o design de interfaces modernas.</p>
+            </article>
+        </section>
+        <section>
+            <h2>Back-end</h2>
+            <article>
+                <h3>Node.js no topo</h3>
+                <p>O Node.js continua liderando como uma das tecnologias mais utilizadas em servidores.</p>
+            </article>
+            <article>
+                <h3>Banco de dados do futuro</h3>
+                <p>Novos bancos de dados estão revolucionando a forma de armazenar informações.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Desenvolvido por Luan</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Notícias</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="Logotipo.png" alt="Logo do site" style="width: 70px;">
+            <h1>Notícias de Desenvolvimento Web</h1>
+        </div>
+    
+        <!-- Menu de navegação com checkbox para controle -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        
+        <!-- Botão de abrir -->
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        
+        <!-- Menu de navegação -->
+        <nav id="navMenu">
+            <a href="index.html">Página Inicial</a> |
+            <a href="listagem.html">Listagem de Notícias</a> |
+            <a href="cadastro.html">Cadastrar Notícia</a> |
+            <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+        </nav>
+    
+        <!-- Botão de fechar -->
+        <label for="menu-toggle" class="close-icon">×</label>
+    </header>
+    <main>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Título</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true">Front-end</td>
+                    <td contenteditable="true">Novidade no HTML6</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Apagar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Front-end</td>
+                    <td contenteditable="true">Tendências em CSS</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Apagar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Back-end</td>
+                    <td contenteditable="true">Node.js no topo</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Apagar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Back-end</td>
+                    <td contenteditable="true">Banco de dados do futuro</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Apagar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Desenvolvido por Luan</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Notícia</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="Logotipo.png" alt="Logo do site" style="width: 70px;">
+            <h1>Notícias de Desenvolvimento Web</h1>
+        </div>
+    
+        <!-- Menu de navegação com checkbox para controle -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        
+        <!-- Botão de abrir -->
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        
+        <!-- Menu de navegação -->
+        <nav id="navMenu">
+            <a href="index.html">Página Inicial</a> |
+            <a href="listagem.html">Listagem de Notícias</a> |
+            <a href="cadastro.html">Cadastrar Notícia</a> |
+            <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+        </nav>
+    
+        <!-- Botão de fechar -->
+        <label for="menu-toggle" class="close-icon">×</label>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="">Selecione</option>
+                <option value="front-end">Front-end</option>
+                <option value="back-end">Back-end</option>
+            </select><br><br>
+
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required><br><br>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required><br><br>
+
+            <label for="texto">Texto:</label>
+            <textarea id="texto" name="texto" rows="5" cols="30" required></textarea><br><br>
+
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*" required><br><br>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Desenvolvido por Luan</p>
+    </footer>
+</body>
+</html>

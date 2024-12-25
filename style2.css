@@ -1,0 +1,126 @@
+/* style2.css - Layout Modificado */
+
+/* Variáveis para cores */
+:root {
+    --primary-color: #8e44ad;
+    --secondary-color: #f1c40f;
+    --background-color: #f4f6f7;
+    --text-color: #34495e;
+    --border-color: #dcdcdc;
+
+    /* Variáveis de fontes */
+    --font-primary: 'Georgia', serif;
+    --font-secondary: 'Arial', sans-serif;
+}
+
+/* Estilo global */
+body {
+    font-family: var(--font-secondary);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center; /* Centraliza o texto */
+}
+
+header img {
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    width: 80px; /* Ajusta o tamanho para layout harmônico */
+}
+
+/* Menu de navegação */
+nav {
+    background-color: var(--primary-color);
+    display: flex; /* Mantém o menu visível e horizontal */
+    justify-content: center;
+    padding: 15px;
+    gap: 20px; /* Espaçamento entre itens */
+    position: sticky; /* Mantém o menu fixo no topo */
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    font-family: var(--font-secondary);
+    column-count: 2; /* Divide o conteúdo em duas colunas */
+    column-gap: 20px; /* Espaçamento entre colunas */
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid var(--border-color);
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+table tr:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 2px solid var(--border-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        column-count: 1; /* Altera para uma coluna em telas menores */
+    }
+}
